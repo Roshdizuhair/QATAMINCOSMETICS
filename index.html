@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Qatamin Cosmetics | Skincare, Serums & Face Creams</title>
+  <meta name="description" content="Qatamin — Turkish-made skincare. Serums, creams, cleanser and tonic in ivory and gold for your everyday ritual. Dare to be different.">
+  <meta name="theme-color" content="#1b130e">
+  <!-- PREVIEW ONLY: keeps the site out of search engines until the owner approves. Delete this line (and robots.txt) to go public. -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="images/logo-dark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero-gold-box.webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+  <!-- Preloader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__panel loader__panel--top"></div>
+    <div class="loader__panel loader__panel--bottom"></div>
+    <div class="loader__inner">
+      <img src="images/logo-ivory.png" alt="" class="loader__logo" width="600" height="171">
+      <span class="loader__line"></span>
+      <span class="loader__tag">dare to be different</span>
+    </div>
+  </div>
+
+  <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="announce">
+      <div class="announce__track">
+        <span>Our new website is here ✦ Turkish-made skincare ✦ Loved in Jordan ✦ Dare to be different</span>
+        <span aria-hidden="true">Our new website is here ✦ Turkish-made skincare ✦ Loved in Jordan ✦ Dare to be different</span>
+      </div>
+    </div>
+    <div class="header__bar">
+      <nav class="header__nav" aria-label="Main">
+        <a href="#collection" class="link-anim">Shop</a>
+        <a href="#ritual" class="link-anim">The Ritual</a>
+        <a href="#ingredients" class="link-anim">Ingredients</a>
+        <a href="#story" class="link-anim">Our Story</a>
+      </nav>
+      <button class="icon-btn header__menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="burger"><i></i><i></i></span>
+      </button>
+      <a href="#top" class="header__logo" aria-label="Qatamin home">
+        <img src="images/logo-ivory.png" alt="Qatamin" class="logo-light" width="600" height="171">
+        <img src="images/logo-dark.png" alt="" class="logo-dark" width="600" height="171">
+      </a>
+      <div class="header__actions">
+        <a href="#faq" class="link-anim header__help">Help</a>
+        <button class="icon-btn" id="searchBtn" aria-label="Search products">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Open bag">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mmenu" id="mmenu" aria-hidden="true">
+    <nav class="mmenu__links">
+      <a href="#collection" data-close>Shop all</a>
+      <a href="#ritual" data-close>The Ritual</a>
+      <a href="#ingredients" data-close>Ingredients</a>
+      <a href="#story" data-close>Our Story</a>
+      <a href="#faq" data-close>Help &amp; FAQ</a>
+    </nav>
+    <div class="mmenu__foot">
+      <a href="https://www.instagram.com/qatamincosmeticsmiddleeast/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/people/Qatamin-Cosmetics-Middle-East/61575647712117/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas class="hero__dust" id="dust" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner container">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow"><span class="reveal-line"><span>Qatamin Cosmetics — Est. in Türkiye</span></span></p>
+          <h1 class="hero__title">
+            <span class="reveal-line"><span>Ready</span></span>
+            <span class="reveal-line"><span>to be</span></span>
+            <span class="reveal-line"><span><em class="gold-text">different?</em></span></span>
+          </h1>
+          <p class="hero__lead fade-in" style="--d:.9s">Turkish-made serums, creams and tonics wrapped in ivory and gold — a little time for yourself, morning and night.</p>
+          <div class="hero__ctas fade-in" style="--d:1.05s">
+            <a href="#collection" class="btn btn--gold magnetic"><span>Shop the collection</span></a>
+            <a href="#ritual" class="btn btn--ghost magnetic"><span>Discover the ritual</span></a>
+          </div>
+          <ul class="hero__facts fade-in" style="--d:1.2s">
+            <li><strong>8</strong><span>signature<br>formulas</span></li>
+            <li><strong>TR</strong><span>made in<br>Türkiye</span></li>
+            <li><strong>JO</strong><span>loved in<br>Jordan</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="arch-outline" aria-hidden="true"></div>
+          <div class="arch hero__arch">
+            <div class="hero__slides" id="heroSlides">
+              <img src="images/hero-gold-box.webp" alt="Qatamin Vitamin C and Hyaluronic serums in a box of gold" class="is-active" width="1122" height="1402">
+              <img src="images/hero-water.webp" alt="Qatamin serums and cream jar in golden water" width="1122" height="1402" loading="lazy">
+              <img src="images/collagen-3.webp" alt="Woman holding Qatamin Collagen Serum" width="1254" height="1254" loading="lazy">
+              <img src="images/night-2.webp" alt="Qatamin Night Care Cream on gold flakes" width="1254" height="1254" loading="lazy">
+            </div>
+          </div>
+          <svg class="badge" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circ">DARE TO BE DIFFERENT ✦ MADE IN TÜRKIYE ✦ QATAMIN ✦ </textPath></text>
+            <circle cx="100" cy="100" r="5"/>
+          </svg>
+          <div class="hero__dots" id="heroDots" role="tablist" aria-label="Hero images">
+            <button class="is-active" aria-label="Image 1"><i></i></button>
+            <button aria-label="Image 2"><i></i></button>
+            <button aria-label="Image 3"><i></i></button>
+            <button aria-label="Image 4"><i></i></button>
+          </div>
+        </div>
+      </div>
+      <a href="#statement" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Hyaluronic Acid</span><i>✦</i><span>Vitamin C</span><i>✦</i><span>Collagen</span><i>✦</i><span>Shea Butter</span><i>✦</i><span>Niacinamide</span><i>✦</i><span>Centella Asiatica</span><i>✦</i><span>Caffeine</span><i>✦</i><span>Rosa Damascena</span><i>✦</i>
+        <span>Hyaluronic Acid</span><i>✦</i><span>Vitamin C</span><i>✦</i><span>Collagen</span><i>✦</i><span>Shea Butter</span><i>✦</i><span>Niacinamide</span><i>✦</i><span>Centella Asiatica</span><i>✦</i><span>Caffeine</span><i>✦</i><span>Rosa Damascena</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Statement -->
+    <section class="statement container" id="statement">
+      <p class="eyebrow reveal">Qatamin's magic</p>
+      <h2 class="statement__text" id="statementText">Your skin. Your moment. Turkish-made skincare that brings cleansing, hydration and everyday care into one simple ritual.</h2>
+      <a href="#story" class="link-arrow reveal">Discover Qatamin <span>→</span></a>
+    </section>
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">The collection</p>
+            <h2 class="h2 reveal">Eight formulas.<br><em>One golden ritual.</em></h2>
+          </div>
+          <div class="filters reveal" id="filters" role="tablist" aria-label="Filter products">
+            <button class="is-active" data-filter="all">All</button>
+            <button data-filter="serum">Serums</button>
+            <button data-filter="cleanse">Cleanse &amp; Tone</button>
+            <button data-filter="cream">Creams</button>
+            <span class="filters__pill" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- Parallax band -->
+    <section class="band" aria-label="Your daily ritual">
+      <div class="band__media"><img src="images/hero-water.webp" alt="" data-parallax="0.18" loading="lazy" width="1122" height="1402"></div>
+      <div class="band__content container">
+        <p class="eyebrow eyebrow--light reveal">Your daily ritual</p>
+        <h2 class="band__title reveal">Make everyday care<br><em class="gold-text">a moment of your own.</em></h2>
+        <a href="#ritual" class="btn btn--gold reveal magnetic"><span>Discover</span></a>
+      </div>
+    </section>
+
+    <!-- RITUAL -->
+    <section class="ritual" id="ritual">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow reveal">The routine</p>
+          <h2 class="h2 reveal">Four steps to <em>your glow.</em></h2>
+        </div>
+        <div class="ritual__layout">
+          <div class="ritual__media" aria-hidden="true">
+            <div class="arch ritual__arch">
+              <img src="images/cleanser-3.webp" alt="" class="is-active" loading="lazy">
+              <img src="images/tonic-3.webp" alt="" loading="lazy">
+              <img src="images/vitc-2.webp" alt="" loading="lazy">
+              <img src="images/shea-2.webp" alt="" loading="lazy">
+            </div>
+            <div class="ritual__counter"><span id="ritualNum">01</span> / 04</div>
+          </div>
+          <ol class="ritual__steps" id="ritualSteps">
+            <li class="step is-active" data-step="0">
+              <img src="images/cleanser-3.webp" alt="Moisturizing Face Cleanser Gel" class="step__img" loading="lazy">
+              <span class="step__num">01</span>
+              <h3>Cleanse</h3>
+              <p>Begin with the Moisturizing Face Cleanser Gel — cleansing and a moisturizing effect in one step, with Hyaluronic Acid, Sodium PCA and Centella Asiatica.</p>
+              <button class="link-arrow" data-open="moisturizing-face-cleanser-gel">Face Cleanser Gel <span>→</span></button>
+            </li>
+            <li class="step" data-step="1">
+              <img src="images/tonic-3.webp" alt="Moisturizing Effect Tonic" class="step__img" loading="lazy">
+              <span class="step__num">02</span>
+              <h3>Tone</h3>
+              <p>Sweep on the Moisturizing Effect Tonic to refresh, hydrate and balance — and help improve the appearance of pores.</p>
+              <button class="link-arrow" data-open="qatamin-moisturizing-effect-tonic">Moisturizing Effect Tonic <span>→</span></button>
+            </li>
+            <li class="step" data-step="2">
+              <img src="images/vitc-2.webp" alt="Vitamin C Serum" class="step__img" loading="lazy">
+              <span class="step__num">03</span>
+              <h3>Treat</h3>
+              <p>Choose your serum: Vitamin C for radiance, Hyaluronic for hydration, Collagen for a touch of luxury — and Eye Repair for the delicate eye contour.</p>
+              <div class="step__chips">
+                <button data-open="qatamin-revitalizing-brightening-vitamin-c-serum-30ml">Vitamin C</button>
+                <button data-open="hyaluronic-moisturizing-care-serum-30-ml">Hyaluronic</button>
+                <button data-open="collagen-serum">Collagen</button>
+                <button data-open="qatamin-eye-repair-serum">Eye Repair</button>
+              </div>
+            </li>
+            <li class="step" data-step="3">
+              <img src="images/shea-2.webp" alt="Shea Butter Day Cream SPF 15" class="step__img" loading="lazy">
+              <span class="step__num">04</span>
+              <h3>Moisturize &amp; protect</h3>
+              <p>By day, Shea Butter Day Cream SPF 15 to nourish and protect. By night, the Night Care Cream to let the day end with care.</p>
+              <div class="step__chips">
+                <button data-open="qatamin-shea-butter-day-cream-spf-15">☀ Day Cream SPF 15</button>
+                <button data-open="night-care-cream-50-ml">☾ Night Care Cream</button>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- INGREDIENTS -->
+    <section class="ingredients" id="ingredients">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--light reveal">Ingredients in focus</p>
+          <h2 class="h2 h2--light reveal">Find your formula <em class="gold-text">by ingredient.</em></h2>
+          <p class="section-sub reveal">Tap an ingredient to see which Qatamin products feature it.</p>
+        </div>
+        <div class="ing__chips reveal" id="ingChips"></div>
+        <div class="ing__results" id="ingResults" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- QUALITY -->
+    <section class="quality container" aria-labelledby="qualityTitle">
+      <div class="section-head section-head--center">
+        <p class="eyebrow reveal">Qatamin's quality</p>
+        <h2 class="h2 reveal" id="qualityTitle">Beauty in <em>every detail.</em></h2>
+      </div>
+      <div class="quality__grid">
+        <article class="qcard reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c6 8 12 14 12 22a12 12 0 0 1-24 0c0-8 6-14 12-22Z"/><path d="M19 30a5 5 0 0 0 5 5"/></svg>
+          <h3>Ingredients in focus</h3>
+          <p>Hyaluronic Acid, Vitamin C, Collagen, Shea Butter — every product page shows the featured ingredients behind the formula.</p>
+        </article>
+        <article class="qcard reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M24 13v11l7 5"/></svg>
+          <h3>Care for every step</h3>
+          <p>Cleanse, tone, treat and moisturize — a complete routine that fits naturally into your morning and night.</p>
+        </article>
+        <article class="qcard reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l4.5 13.5H43l-11.7 8.5 4.5 13.5L24 32l-11.8 8.5 4.5-13.5L5 18.5h14.5Z"/></svg>
+          <h3>Beauty in the details</h3>
+          <p>Frosted glass, ivory labels and polished gold collars — a signature style made to sit beautifully on your shelf.</p>
+        </article>
+        <article class="qcard reveal">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30c8-12 28-12 36 0"/><circle cx="10" cy="32" r="3"/><circle cx="38" cy="32" r="3"/><path d="M24 14v-6m-4 3 4-3 4 3"/></svg>
+          <h3>From Turkey to Jordan</h3>
+          <p>Formulated and made in Türkiye, brought to you in Jordan with the same personal touch from day one.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="story">
+      <div class="container story__inner">
+        <div class="story__visual">
+          <div class="arch story__arch"><img src="images/model-cream.webp" alt="Woman holding a Qatamin cream jar" data-parallax="-0.08" loading="lazy" width="941" height="941"></div>
+          <div class="story__float"><img src="images/eye-3.webp" alt="Woman with Qatamin Eye Repair Serum" data-parallax="0.12" loading="lazy"></div>
+        </div>
+        <div class="story__copy">
+          <p class="eyebrow reveal">Our story</p>
+          <h2 class="h2 reveal">Made with love <span class="heart">♡</span></h2>
+          <p class="reveal">Qatamin’s journey began in Turkey and continued in Jordan, shaped by the care and dedication of Ms.&nbsp;Samya.</p>
+          <p class="reveal">From the first chapter to every new beginning, that personal touch remains at the heart of our brand — bringing a little love to your everyday skincare ritual.</p>
+          <blockquote class="story__quote reveal">“Skincare is personal. Find the ritual that feels like you.”</blockquote>
+          <a href="#collection" class="btn btn--dark reveal magnetic"><span>Explore Qatamin skincare</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOMENTS -->
+    <section class="moments" aria-labelledby="momentsTitle">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow reveal">#QataminMoments</p>
+          <h2 class="h2 reveal" id="momentsTitle">Your skin. <em>Your moment.</em></h2>
+        </div>
+        <a href="https://www.instagram.com/qatamincosmeticsmiddleeast/" target="_blank" rel="noopener" class="link-arrow reveal">Follow on Instagram <span>↗</span></a>
+      </div>
+      <div class="moments__track" id="moments">
+        <button class="moment" data-open="qatamin-eye-repair-serum"><img src="images/eye-3.webp" alt="" loading="lazy"><span>Eye Repair Serum</span></button>
+        <button class="moment" data-open="moisturizing-face-cleanser-gel"><img src="images/cleanser-2.webp" alt="" loading="lazy"><span>Face Cleanser Gel</span></button>
+        <button class="moment" data-open="hyaluronic-moisturizing-care-serum-30-ml"><img src="images/hyaluronic-3.webp" alt="" loading="lazy"><span>Hyaluronic Serum</span></button>
+        <button class="moment" data-open="qatamin-shea-butter-day-cream-spf-15"><img src="images/model-cream.webp" alt="" loading="lazy"><span>Shea Butter Day Cream</span></button>
+        <button class="moment" data-open="collagen-serum"><img src="images/collagen-3.webp" alt="" loading="lazy"><span>Collagen Serum</span></button>
+        <button class="moment" data-open="moisturizing-face-cleanser-gel"><img src="images/cleanser-4.webp" alt="" loading="lazy"><span>Face Cleanser Gel</span></button>
+        <button class="moment" data-open="qatamin-moisturizing-effect-tonic"><img src="images/tonic-2.webp" alt="" loading="lazy"><span>Moisturizing Tonic</span></button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container" id="faq">
+      <div class="faq__head">
+        <p class="eyebrow reveal">Help</p>
+        <h2 class="h2 reveal">Questions, <em>answered.</em></h2>
+        <p class="reveal faq__note">Need something else? <a href="https://qatamincosmetics.com/pages/contact" target="_blank" rel="noopener" class="link-anim">Contact our team</a>.</p>
+      </div>
+      <div class="faq__list">
+        <details class="reveal"><summary>Where do I start?</summary><div><p>Explore toners, serums and moisturizers by category. Each product includes the documented benefits, featured ingredients and available directions. Our four-step ritual above is a great place to begin.</p></div></details>
+        <details class="reveal"><summary>Which products are suitable for my skin type?</summary><div><p>The Moisturizing Effect Tonic and Vitamin C Serum are described as suitable for all skin types. Check each product and its packaging for the guidance specific to that formula, or contact us if you need information that is not listed.</p></div></details>
+        <details class="reveal"><summary>Where can I find the ingredients?</summary><div><p>Product details show the featured ingredients supplied in the catalogue. These are not a full INCI list — refer to the product packaging for the complete ingredient list, or ask our team before ordering.</p></div></details>
+        <details class="reveal"><summary>How much will delivery cost?</summary><div><p>Available delivery options and charges are calculated at checkout after you provide your delivery address. Contact our team before ordering if you need a delivery estimate.</p></div></details>
+        <details class="reveal"><summary>Which payment methods can I use?</summary><div><p>The available payment methods are shown at checkout. Contact us to confirm whether cash on delivery is available for your address before placing an order.</p></div></details>
+        <details class="reveal"><summary>How do I get help with an order?</summary><div><p>Use our contact form and include your order number, the item name and a description of what you need help with. Never send card details through the form.</p></div></details>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__cta container">
+      <h2 class="footer__big reveal">Dare to be <em class="gold-text">different.</em></h2>
+      <a href="#collection" class="btn btn--gold magnetic reveal"><span>Shop now</span></a>
+    </div>
+    <div class="footer__cols container">
+      <div class="footer__brand">
+        <img src="images/logo-ivory.png" alt="Qatamin" width="600" height="171" loading="lazy">
+        <p>Turkish-made skincare for your everyday ritual.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/qatamincosmeticsmiddleeast/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/people/Qatamin-Cosmetics-Middle-East/61575647712117/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="#collection" data-filter-link="all">All skincare</a>
+        <a href="#collection" data-filter-link="serum">Serums</a>
+        <a href="#collection" data-filter-link="cleanse">Cleanse &amp; Tone</a>
+        <a href="#collection" data-filter-link="cream">Moisturizers</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="https://qatamincosmetics.com/pages/contact" target="_blank" rel="noopener">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://qatamincosmetics.com/pages/shipping-delivery" target="_blank" rel="noopener">Shipping &amp; delivery</a>
+        <a href="https://qatamincosmetics.com/pages/returns-support" target="_blank" rel="noopener">Returns &amp; support</a>
+      </div>
+      <div>
+        <h4>Qatamin</h4>
+        <a href="#story">Our story</a>
+        <a href="#ritual">The routine</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="https://qatamincosmetics.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy policy</a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© <span id="year">2026</span> Qatamin Cosmetics. All rights reserved.</span>
+      <span>Prices in Jordanian Dinar (JOD)</span>
+    </div>
+  </footer>
+
+  <!-- Overlay shared by drawers/modals -->
+  <div class="scrim" id="scrim"></div>
+
+  <!-- Cart drawer -->
+  <aside class="drawer" id="drawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Your bag <span id="drawerCount"></span></h3>
+      <button class="icon-btn" data-close-drawer aria-label="Close bag"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="drawer__body" id="drawerBody"></div>
+    <div class="drawer__foot" id="drawerFoot">
+      <div class="drawer__total"><span>Subtotal</span><strong id="subtotal">0.000 JOD</strong></div>
+      <p class="drawer__note">Delivery and payment options are calculated at secure checkout.</p>
+      <a class="btn btn--dark btn--block" id="checkoutBtn" href="#" target="_blank" rel="noopener"><span>Secure checkout</span></a>
+    </div>
+  </aside>
+
+  <!-- Product modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" aria-hidden="true">
+    <div class="modal__box">
+      <button class="icon-btn modal__close" data-close-modal aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="modal__gallery">
+        <div class="modal__main" id="mMain"></div>
+        <div class="modal__thumbs" id="mThumbs"></div>
+      </div>
+      <div class="modal__info">
+        <p class="eyebrow" id="mType"></p>
+        <h2 id="mTitle"></h2>
+        <p class="modal__tagline" id="mTag"></p>
+        <div class="modal__price"><strong id="mPrice"></strong><span id="mSize"></span></div>
+        <div class="modal__buy">
+          <div class="qty" aria-label="Quantity">
+            <button data-qty="-1" aria-label="Decrease quantity">−</button>
+            <span id="mQty">1</span>
+            <button data-qty="1" aria-label="Increase quantity">+</button>
+          </div>
+          <button class="btn btn--dark btn--grow" id="mAdd"><span>Add to bag</span></button>
+        </div>
+        <a class="btn btn--gold btn--block" id="mBuy" href="#" target="_blank" rel="noopener"><span>Buy it now</span></a>
+        <div class="modal__tabs">
+          <details open><summary>Description</summary><div id="mDesc"></div></details>
+          <details><summary>Highlights</summary><ul id="mHigh"></ul></details>
+          <details><summary>Featured ingredients</summary><div class="modal__ings" id="mIngs"></div><p class="modal__small">Featured ingredients, not the complete ingredient list. Refer to the packaging for full details.</p></details>
+          <details><summary>How to use</summary><p id="mHow"></p></details>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search" id="search" aria-hidden="true" role="dialog" aria-label="Search">
+    <div class="search__box container">
+      <div class="search__bar">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="searchInput" placeholder="Search serums, creams, ingredients…" autocomplete="off" aria-label="Search products">
+        <button class="icon-btn" data-close-search aria-label="Close search"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <div class="search__results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
